@@ -22,5 +22,5 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v3.3.0
       with:
-        tags: goodenberg:${{ github.ref_name }}
+        tags: 21pilots/goodenberg:${{ github.ref_name }}
         push: true
