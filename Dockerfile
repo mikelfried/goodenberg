@@ -11,7 +11,8 @@ RUN apt-get update && apt-get -y install python3.10 python3-pip
 RUN apt-get --no-install-recommends install libreoffice -y
 RUN apt-get install -y libreoffice-java-common
 
-RUN pip install unoserver && pip install fastapi uvicorn python-multipart
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
 RUN echo "@daily root find /tmp/* -atime +1 -type f -delete" >> /etc/crotab
 
