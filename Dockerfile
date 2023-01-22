@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 #     apt-get -y install python3.10 && \
 #     apt update && apt install python3-pip -y
 
-RUN apt-get update && apt-get -y install python3.10 python3-pip
+RUN apt-get update && apt-get -y install python3.10 python3-pip ttf-mscorefonts-installer fonts-sil-scheherazade ttf-wqy-microhei
 
 RUN apt-get --no-install-recommends install libreoffice -y
 RUN apt-get install -y libreoffice-java-common
