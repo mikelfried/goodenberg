@@ -20,3 +20,8 @@ docker run -p [YOUR PORT]:80 21pilots/goodenberg[:TAG]
 ```
 connect to `localhost:[YOUR PORT]/docs`
 ```
+
+# Benchmarks
+
+Faster than gotenberg and onlyoffice. 
+Has support for RTL languages unlike onlyoffice.
