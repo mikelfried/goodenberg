@@ -6,7 +6,7 @@ import re
 from fastapi import FastAPI, UploadFile, HTTPException
 from fastapi.responses import FileResponse
 
-from starlette.background import BackgroundTasks
+from starlette.background import BackgroundTask
 
 def cleanup(path: str) -> None:
     os.remove(path)
