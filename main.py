@@ -1,6 +1,7 @@
 from subprocess import run
 import logging
 from os.path import exists
+import os
 import re
 
 from fastapi import FastAPI, UploadFile, HTTPException
