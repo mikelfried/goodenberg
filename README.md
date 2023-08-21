@@ -13,7 +13,7 @@ to `pdf`
 # Deploy with docker
 ```
 docker pull 21pilots/goodenberg[:TAG]
-docker run -p [YOUR PORT]:80 21pilots/goodenberg[:TAG]
+docker run -p [YOUR PORT]:8080 21pilots/goodenberg[:TAG]
 ```
 
 # Open API Docs

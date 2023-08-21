@@ -13,4 +13,4 @@ RUN echo "@daily root find /tmp/* -atime +1 -type f -delete" >> /etc/crotab
 
 COPY main.py /main.py
 
-CMD ["/bin/bash", "-c", "unoserver & uvicorn --host 0.0.0.0 --port 80 main:app"]
+CMD ["/bin/bash", "-c", "unoserver & uvicorn --host 0.0.0.0 --port 8080 main:app"]
